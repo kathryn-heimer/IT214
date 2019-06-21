@@ -8,6 +8,9 @@
 </head>
 <body>
 Should I Be an IT Major?
+<%
+// created a START button to link to the Question1.jsp page to be able to start answer the questions
+%>
 <a href="Question1.jsp">START</a>
 </body>
 </html>
