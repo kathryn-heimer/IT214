@@ -7,36 +7,37 @@
 <title>Results</title>
 </head>
 <body>
-<% int counter = 0;
+<%
+int counter = 0;
 if(request.getParameter("quizAnswer") != null){
-	if(request.getParameter("quizAnswer1").equals("radio1")){
+	if(request.getParameter("questionAnswer1").equals("radio1")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer3").equals("radio3")){
+	else if(request.getParameter("questionAnswer3").equals("radio3")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer5").equals("radio5")){
+	else if(request.getParameter("questionAnswer5").equals("radio5")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer7").equals("radio7")){
+	else if(request.getParameter("questionAnswer7").equals("radio7")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer9").equals("radio9")){
+	else if(request.getParameter("questionAnswer9").equals("radio9")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer11").equals("radio11")){
+	else if(request.getParameter("questionAnswer11").equals("radio11")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer13").equals("radio13")){
+	else if(request.getParameter("questionAnswer13").equals("radio13")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer15").equals("radio15")){
+	else if(request.getParameter("questionAnswer15").equals("radio15")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer17").equals("radio17")){
+	else if(request.getParameter("questionAnswer17").equals("radio17")){
 		counter++;
 	}
-	if(request.getParameter("quizAnswer19").equals("radio19")){
+	else if(request.getParameter("questionAnswer19").equals("radio19")){
 		counter++;
 	}
 }
@@ -49,8 +50,8 @@ else if(counter>4 || counter < 9){
 }
 else if(counter>8 || counter < 11){
 	System.out.println("You should be an IT Major.");
-	%>
 }
-}
+%>
+
 </body>
 </html>

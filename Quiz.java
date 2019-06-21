@@ -34,8 +34,14 @@ public class Quiz {
 				new Question(q10, "yes")
 		};
 	
-	public Question [] getQuestion(int i) {
-		return question[i];
+	public Question [] getQuestion(Question question[]) {
+		Question min = question[0];
+		for(int i = 0; i<question.length; i++) {
+			if(question[i]!= min) {
+				min= question[i];
+			}
+		}
+		return min;
 	}
 
 	}
